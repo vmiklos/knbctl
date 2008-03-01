@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<bot>
+	<nick>sample</nick>
+	<realname>RealName</realname>
+	<keep>MyNick</keep>
+	<server>irc.server.com</server>
+	<port>6667</port>
+	<channel>#foo</channel>
+	<owner>nick!ident@host</owner>
+</bot>
