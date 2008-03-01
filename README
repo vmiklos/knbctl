@@ -1,0 +1,38 @@
+= Web Interface for KNB
+Miklos Vajna <vmiklos@vmiklos.hu>
+
+== What's knbctl?
+
+knbctl is a web interface for link:http://www.beer.one.pl/~esio/c/[knb],
+an IRC bot to keep your nick on networks where there are no services.
+
+== Why is it good?
+
+If you host a knb for somebody with a dynamic ip and you don't want to
+give shell access, then just install knbctl and the user will be able to
+self-administrate himself/herself.
+
+== How does it work?
+
+First you need to edit the `knbctl.config` file. 'username' and
+'password' is used for the web interface, try to login with any password
+to get the hash. The nick is the nick of the bot when it does not keep
+your nick. The 'knbdir' directive specifies the directory where the
+`<nick>.xml` and the `knb` executable can be found.
+
+When the user edits the details on the web and presses the submit button
+the `<nick>.uf` and `<nick>.conf` files are regenerated from the
+`<nick>.xml` file and the bot is restarted.
+
+Once again:
+
+- You need to edit knbctl.config!
+- You need to have knbctl.config in the same dir as knbctl.py is and you
+  need to have the `<nick>.xml` file where the `knb` execurable can be
+  found.
+
+Enjoy!
+
+Back to my link:/projects[projects page].
+
+// vim: ft=asciidoc
