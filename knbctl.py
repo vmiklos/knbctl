@@ -53,7 +53,7 @@ channel %s
 		sock.close()
 
 		sock = open("%s.uf" % self.nick, "w")
-		sock.write("%s\n" % self.owner)
+		sock.write("01 %s\n" % self.owner)
 		sock.close()
 
 	def restart(self):
@@ -61,7 +61,7 @@ channel %s
 			sock = open("pid.%s" % self.nick, "r")
 			pid = int(sock.read().strip())
 			sock.close()
-			os.kill(pid, 15)
+			os.kill(pid, 9)
 		except OSError:
 			pass
 		os.system("./knb %s.conf >/dev/null 2>&1" % self.nick)
