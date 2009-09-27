@@ -1,6 +1,10 @@
 = Web Interface for KNB
 Miklos Vajna <vmiklos-at-vmiklos-dot-hu>
 
+NOTE: I'm not really interested in working on this anymore, as it
+fulfills my need. However, I can understand someone else might want to
+try the same, so I put the code online to avoid double work.
+
 == What's knbctl?
 
 knbctl is a web interface for link:http://www.beer.one.pl/~esio/c/[knb],
